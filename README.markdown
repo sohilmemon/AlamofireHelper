@@ -6,7 +6,7 @@ This project supports Swift 4.0+ & Alamofire 4.0+
 
 ## Usage
 
-GET request:
+> GET request:
 
 ```swift
 AlamofireHelper.get(withUrl: API.LOGIN) { (response, error) in
@@ -20,7 +20,7 @@ AlamofireHelper.get(withUrl: API.LOGIN) { (response, error) in
 }
 ```
 
-POST/PUT/Delete request:
+> POST/PUT/Delete request:
 
 ```swift
 AlamofireHelper.request(withUrl: API.SIGNUP, methodType: HTTPMethod.post, paramaters, headers) { (response, error) in
@@ -34,7 +34,7 @@ AlamofireHelper.request(withUrl: API.SIGNUP, methodType: HTTPMethod.post, parama
 }
 ```
 
-Multipart Upload request with Progress:
+> Multipart Upload request with Progress:
 
 ```swift
 AlamofireHelper.uploadMultipartData(API.UPLOAD, paramaters, dictMultipartData: dictFiles, completion: { (response, error) in
